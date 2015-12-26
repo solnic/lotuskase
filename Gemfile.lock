@@ -1,0 +1,110 @@
+GIT
+  remote: git://github.com/dryrb/dry-component.git
+  revision: fd364a8825f83955cd2b21e40e8513e96692874e
+  branch: master
+  specs:
+    dry-component (0.0.2)
+      dry-auto_inject (~> 0.1)
+      dry-configurable (~> 0.1)
+      dry-container (~> 0.2, >= 0.2.7)
+      inflecto (>= 0.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (8.2.1)
+    capybara (2.5.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    coderay (1.1.0)
+    database_cleaner (1.5.1)
+    diff-lcs (1.2.5)
+    dry-auto_inject (0.1.0)
+    dry-configurable (0.1.2)
+      thread_safe
+    dry-container (0.2.7)
+      dry-configurable (= 0.1.2)
+      thread_safe
+    ffi (1.9.10-java)
+    http_router (0.11.2)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
+    inflecto (0.0.2)
+    lotus-router (0.4.3)
+      http_router (~> 0.11)
+      lotus-utils (~> 0.5, >= 0.5.1)
+    lotus-utils (0.5.2)
+    lotus-view (0.4.4)
+      lotus-utils (~> 0.5)
+      tilt (~> 2.0, >= 2.0.1)
+    method_source (0.8.2)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2015.1120)
+    mini_portile2 (2.0.0)
+    nokogiri (1.6.7.1)
+      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.7.1-java)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry (0.10.3-java)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+      spoon (~> 0.0)
+    rack (1.6.4)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rake (10.4.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    slim (3.0.6)
+      temple (~> 0.7.3)
+      tilt (>= 1.3.3, < 2.1)
+    slop (3.6.0)
+    spoon (0.0.4)
+      ffi
+    temple (0.7.6)
+    thread_safe (0.3.5)
+    thread_safe (0.3.5-java)
+    tilt (2.0.1)
+    url_mount (0.2.1)
+      rack
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  byebug
+  capybara
+  database_cleaner
+  dry-component!
+  lotus-router
+  lotus-view
+  pry
+  rack-test
+  rake
+  rspec
+  slim
+
+BUNDLED WITH
+   1.10.6

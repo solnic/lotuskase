@@ -1,5 +1,5 @@
 require 'blog/application'
 
 Blog::Application.routes do
-  get '/', to: 'home#hello'
+  get '/', to: 'controllers/home#hello'
 end

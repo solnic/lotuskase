@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/dryrb/dry-component.git
-  revision: 379976f57564807c2e159a58f5e7839d139e309d
+  revision: 7eabb29793f40ceb78535ba7f0541d7524b5ddc0
   branch: master
   specs:
     dry-component (0.0.2)

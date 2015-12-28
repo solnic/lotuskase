@@ -6,7 +6,7 @@ Blog::Container.finalize(:view) do |container|
   end
 
   require 'lotus-view'
-  container.require(container.root.join('web/views/**/*.rb').to_s)
+  container.require(container.root.join('web/views/**/*.rb'))
 
   Lotus::View.load!
 end

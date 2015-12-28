@@ -22,12 +22,5 @@ module Blog
     def self.call(*args)
       @routes.call(*args)
     end
-
-    require 'lotus-controller'
-    container.require(root.join('web/routes').to_s)
-    container.require(root.join('web/controllers/**/*.rb').to_s)
-
-    require 'lotus-view'
-    container.require(root.join('web/views/**/*.rb').to_s)
   end
 end

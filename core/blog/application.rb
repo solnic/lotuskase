@@ -1,11 +1,30 @@
 require 'lotus/router'
+require_relative 'container'
 
 module Blog
   class Application
-    def self.app
-      Lotus::Router.new do
-        get '/', to: ->(env) { [200, {}, ['Welcome to Lotus::Router!']] }
-      end
+    def self.routes(&block)
+      @routes = Lotus::Router.new(&block)
     end
+
+    def self.container
+      Container
+    end
+
+    def self.app
+      self
+    end
+
+    def self.root
+      container.root
+    end
+
+    def self.call(*args)
+      @routes.call(*args)
+    end
+
+    require 'lotus-controller'
+    container.require(root.join('web/routes').to_s)
+    container.require(root.join('web/*/**/*.rb').to_s)
   end
 end

@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'lotus-router'
+gem 'lotus-controller'
 gem 'lotus-view'
 
 gem 'pry'

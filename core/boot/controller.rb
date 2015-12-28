@@ -1,6 +1,6 @@
-Blog::Container.finalize(:controller) do
+Blog::Container.finalize(:controller) do |container|
   require 'lotus/controller'
 
-  Blog::Container.require(Blog::Container.root.join('web/routes').to_s)
-  Blog::Container.require(Blog::Container.root.join('web/controllers/**/*.rb').to_s)
+  container.require(container.root.join('web/routes').to_s)
+  container.require(container.root.join('web/controllers/**/*.rb').to_s)
 end

@@ -1,12 +1,12 @@
-Blog::Container.finalize(:view) do
+Blog::Container.finalize(:view) do |container|
   require 'lotus/view'
 
   Lotus::View.configure do
-    root(Blog::Container.root.join('web/templates'))
+    root(container.root.join('web/templates'))
   end
 
   require 'lotus-view'
-  Blog::Container.require(Blog::Container.root.join('web/views/**/*.rb').to_s)
+  container.require(container.root.join('web/views/**/*.rb').to_s)
 
   Lotus::View.load!
 end
